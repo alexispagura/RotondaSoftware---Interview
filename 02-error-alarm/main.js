@@ -4,6 +4,7 @@ let lastNotificationTimestamp = null;
 const ONE_MINUTE_IN_MS = 1 * 60 * 1000;
 
 function logError(error) {
+  // Log error in the txt file
   const currentTimestamp = getCurrentDateTime();
 
   if (!lastNotificationTimestamp || currentTimestamp - lastNotificationTimestamp >= ONE_MINUTE_IN_MS) {
